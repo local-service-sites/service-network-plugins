@@ -1,4 +1,4 @@
-﻿# Service Network plugins
+# Service Network plugins
 
 The official Service Network plugin for Claude and Codex. One folder installs on both.
 
@@ -50,6 +50,7 @@ Work that needs this computer, such as the local project folder, the local runne
 
 ```
 .claude-plugin/marketplace.json      Claude marketplace
+LICENSE                              MIT
 .agents/plugins/marketplace.json     Codex marketplace
 plugins/service-network-operator/
   plugin.json                        portable manifest (Codex reads this first)
