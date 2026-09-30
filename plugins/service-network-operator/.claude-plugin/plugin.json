@@ -1,0 +1,11 @@
+{
+  "name": "service-network-operator",
+  "version": "0.1.0",
+  "description": "Connect an assistant to Service Network and operate a home-service company from its live, permission-checked records.",
+  "author": {
+    "name": "Service Network",
+    "url": "https://service-network.pages.dev"
+  },
+  "homepage": "https://service-network.pages.dev",
+  "keywords": ["home-services", "operations", "field-service", "service-fusion", "quickbooks", "mcp"]
+}

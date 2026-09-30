@@ -1,0 +1,4 @@
+interface:
+  display_name: "Service Network"
+  short_description: "Operate your service company from live records"
+  default_prompt: "Use $service-network to check my Service Network access and company context."

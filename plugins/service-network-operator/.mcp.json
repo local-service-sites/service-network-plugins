@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "service-network": {
+      "type": "http",
+      "url": "https://service-network.pages.dev/api/mcp"
+    }
+  }
+}

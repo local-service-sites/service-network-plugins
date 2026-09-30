@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "service-network-operator",
+  "version": "0.1.0",
+  "description": "Connect an assistant to Service Network and operate a home-service company from its live, permission-checked records.",
+  "author": {
+    "name": "Service Network",
+    "url": "https://service-network.pages.dev"
+  },
+  "homepage": "https://service-network.pages.dev",
+  "keywords": ["home-services", "operations", "field-service", "service-fusion", "quickbooks", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Service Network Operator",
+        "shortDescription": "Operate your service company from live records.",
+        "longDescription": "Connects the assistant to Service Network's authenticated connection and adds a small bootstrap skill. The skill confirms which account and company it is working under, then loads the current operating guide and tool catalog from Service Network at run time, so instructions never go stale in the installed copy. Sign-in happens in the browser; the plugin contains no credentials or company data.",
+        "developerName": "Service Network",
+        "category": "Productivity",
+        "capabilities": ["Home-service operations", "Authenticated MCP", "Live operating guide"],
+        "websiteURL": "https://service-network.pages.dev",
+        "defaultPrompt": [
+          "Check my Service Network access and company context.",
+          "Run my Service Network Operations Update for the active company.",
+          "Which jobs and estimates need follow-up today?"
+        ]
+      }
+    }
+  }
+}

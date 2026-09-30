@@ -1,0 +1,17 @@
+{
+  "name": "service-network",
+  "owner": {
+    "name": "Service Network"
+  },
+  "metadata": {
+    "description": "Official Service Network plugins for Claude and Codex."
+  },
+  "plugins": [
+    {
+      "name": "service-network-operator",
+      "source": "./plugins/service-network-operator",
+      "description": "Connect an assistant to Service Network and operate a home-service company from its live, permission-checked records.",
+      "category": "productivity"
+    }
+  ]
+}

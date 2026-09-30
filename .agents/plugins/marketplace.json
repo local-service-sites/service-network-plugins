@@ -1,0 +1,20 @@
+{
+  "name": "service-network",
+  "interface": {
+    "displayName": "Service Network"
+  },
+  "plugins": [
+    {
+      "name": "service-network-operator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/service-network-operator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
