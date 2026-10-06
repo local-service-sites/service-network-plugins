@@ -33,6 +33,21 @@ codex plugin marketplace add local-service-sites/service-network-plugins
 codex plugin add service-network-operator@service-network
 ```
 
+## Use with Meta Muse
+
+Muse does not install plugins or skill files, so this folder does not apply to it. Muse connects to the same hosted Service Network connection as a **custom connector** that it builds for you in chat.
+
+1. In Muse (the iOS or Android app, or the web), start a new chat and paste:
+
+   > Build a custom integration to Service Network, the operations system for my home-service company. Its MCP server URL is https://service-network.pages.dev/api/mcp and its documentation is at https://service-network.pages.dev/connector. It signs in with OAuth (PKCE and dynamic client registration). Open the sign-in in the browser and let me approve it; never ask me to paste a password or token into the chat. Once connected, call account_context_get first and tell me which company you are working in. Then use capability_search and capability_get to find the right tool before doing anything else. Ask me before every call the documentation marks as a sensitive write.
+
+2. Approve the Service Network sign-in when Muse opens it. Never paste a password or token into the chat.
+3. Check that Muse names your company before it says anything about live records.
+
+Muse runs in Meta's cloud, so the local project folder, the local runner, and scheduled Operations Updates still need an assistant on your computer. Meta does not review custom connectors, and the records you ask about pass through Meta's service. Service Network is not yet listed in the Muse connector directory.
+
+The connector documentation, with every tool marked read, write, or sensitive write, is published at `https://service-network.pages.dev/connector` (also as `/connector.md`, `/connector.json`, and `/llms.txt`).
+
 ## What does not install from here
 
 - **ChatGPT on the web and mobile** cannot add a marketplace from a repository. The plugin reaches those surfaces only after it is published to a ChatGPT workspace from the desktop app, or listed in the public directory. Until then, add `https://service-network.pages.dev/api/mcp` as a custom connector.
